@@ -43,11 +43,11 @@ class Predictor(BasePredictor):
         self,
         prompt: str = Input(
             description="入力プロンプト",
-            default="a photo of a cute cat at home",
+            default="best quality, hd, a photo of a cute cat at home",
         ),
         negative_prompt: str = Input(
             description="出力する画像に表示したくないものを指定",
-            default=None,
+            default="low quality, blurry",
         ),
         width: int = Input(
             description="出力画像の幅 (メモリ制限のため、最大サイズは 1024x768 または 768x1024 です)",
